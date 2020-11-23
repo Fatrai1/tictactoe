@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    background-image: linear-gradient(to right, red,yellow);
+}
+.header {
+    text-align: center;
+}
+.menu {
+    display: flex;
+}
+.startBtn {
+    margin: 20px auto;
+}
+.wrapper {
+    text-align: center;
+    background-color: rgb(241, 238, 217);
+    border-radius: 10px;
+    margin: 50px auto;
+    padding: 20px;
+    width: 400px;
+}
+.container {
+    display: grid;
+    gap: 0;
+    grid-template-columns: repeat(3, auto);
+    margin: 20px auto;
+    width: 300px;
+}
+.cella {
+    background-color: #f7f1f1;
+    border: solid 1px #050505;
+    border-radius: 10%;
+    box-shadow: 3px 3px 3px #ffbf5e ;
+    cursor: pointer;
+    font-size: 60px;
+    height: 100px;
+    margin: 3px;
+    width: 100px;
+}
