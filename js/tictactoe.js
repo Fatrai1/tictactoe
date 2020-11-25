@@ -1,4 +1,3 @@
-
 'use strict';
 // maga a mátrix, egyelőre csak egy üres tömb
 const matrix = [];
@@ -74,15 +73,20 @@ const checkRowValues = () => {
 // Megnézem hogy van e olyan oszlop, ahol minden elem ugyanaz
 // TODO: Meg kell írnod, boolean adjon vissza
 const checkColumnValues = () => {
-    const values = matrix.map(column =>
-        column.every((value) => value === 'X') ||
-        column.every((value) => value === 'O'))
-    return values.indexOf(true) !== -1 ? true : false;
+   const colums =[];
+   for(let i=0; i < matrix.length; i++) {
+       colums[i] =[];
+       for(let j=0; j<matrix[i].length; j++) {
+           colums[i][j] = matrix[j][i];
+       }
+   }
  }
 
 // Megnézem hogy van e olyan oszlop, ahol minden elem ugyanaz
 // TODO: Meg kell írnod, boolean adjon vissza
-const checkDiagonalValues = () => { }
+const checkDiagonalValues = () => { 
+
+}
 
 
 // TODO: Meg kell írnod, nincs befejezve
