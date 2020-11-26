@@ -1,34 +1,69 @@
-* {
-    box-sizing: border-box;
-}
 html {
     font-size: 24px;
 }
 
 body {
-    background-image: linear-gradient(to right, black, white );
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    display: flex;
+    padding: 0;
+    background-color: black;
 }
-
+* {
+    box-sizing: border-box;
+}
+.wrapper{ 
+    
+    background-image: linear-gradient(to right, rgb(73, 73, 73),black, rgb(73, 73, 73));
+    max-width: 400px;
+    height: 600px;
+    margin: 2rem auto;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    color: white;
+    text-align: center;
+}
 .tictactoe {
     display: flex;
     flex-direction: column;
-    margin: 40px auto;
+ 
 }
 
 .tictactoe__row {
     display: flex;
+    margin: 1px auto;
+    
 }
 
 .tictactoe__cell {
+    background-color: rgb(211, 211, 211);
     border: 1px solid #ddd;
-    height: 2rem;
-    padding: .5rem;
-    margin: 10px;
     border-radius: 10px;
-    width: 2rem;
-    height: 100px;
-    width: 100px;
+    box-shadow: 1px 2px 2px #d6d5d5;
+    height: 4rem;
+    padding: .5rem;
+    margin: 0.2rem;
+    width: 4rem;
+    line-height: 3rem;
+    text-align: center;
+    transition: background-color 0.5s;
+}
+.tictactoe__cell:hover {
+    background-color: rgb(162, 253, 177);
+}
+.message {
+    text-align: center;
+    color: white;
+}
+.new-game {
+    border: 1px solid white;
+    margin: 0 0 0 6.5rem;
+    line-height: 1rem;
+    border-radius: 5px;
+    background-color: rgb(43, 180, 43);
+    color: white;
+}
+.new-game:hover {
+    background-color: rgb(74, 74, 252);
 }
